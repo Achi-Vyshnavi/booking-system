@@ -1,0 +1,118 @@
+/* new2.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 1em;
+    color: white;
+    text-decoration: none;
+}
+
+.carousel {
+    width: 100%; /* Make the carousel fill the entire width of the page */
+    margin: 0 auto; /* Center the carousel */
+    margin-top: 2em;
+}
+
+.custom-carousel-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    border: 5px solid;
+    border-image: linear-gradient(45deg, #ff6b6b, #ff6bb5, #6b6bff, #6bffb5, #b56bff);
+    border-image-slice: 1;
+    transition: transform 0.5s, box-shadow 0.5s, border-color 0.5s;
+}
+
+.custom-carousel-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+}
+
+.carousel-caption button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.carousel-caption button:hover {
+    background-color: #45a049;
+}
+
+.about-us {
+    background-color: #1e1e1e;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.about-us h2 {
+    margin-bottom: 1em;
+}
+
+.about-us p {
+    color: #999;
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    height: calc(100vh - 20px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+.sidebar .nav-link .fas {
+    margin-right: 10px;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+}

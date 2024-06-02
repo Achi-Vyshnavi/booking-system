@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Doctor Appointment Booking System</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ background-color: #f7f9fc;
+ margin: 0;
+ padding: 0;
+ }
+
+ .container {
+ max-width: 800px;
+ margin: 20px auto;
+ padding: 20px;
+ background-color: #95e1e7d4;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ 
+
+ 
+
+ 
+ #booking-form {
+ background-color: #6796bf; /* Light Blue */
+ padding: 20px;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(18, 15, 15, 0.1);
+ }
+
+ #booking-form label {
+ display: block;
+ margin-bottom: 5px;
+ }
+
+ #booking-form input[type="text"],
+ #booking-form input[type="email"],
+ #booking-form input[type="tel"],
+ #booking-form select,
+ #booking-form button {
+ width: calc(100% - 22px); /* Adjust the width as needed */
+ padding: 10px;
+ margin-bottom: 10px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ box-sizing: border-box;
+ font-size: 16px;
+ }
+
+ #booking-form button {
+ background-color: #7cabd6; /* Green */
+ color: rgba(0, 0, 0, 0.725);
+ border: none;
+ cursor: pointer;
+ }
+
+ #booking-form button:hover {
+ background-color: #5b8dc0;
+ }
+ </style>
+</head>
+<body>
+ <h1>Doctor Appointment Booking System</h1>
+ <div class="container">
+ <div id="physicians">
+ <h2>Physicians</h2>
+ <ul>
+ <li>
+ <h3>Dr. John Doe</h3>
+ <p>Location: City Hospital</p>
+ <p>Contact: 123-456-7890</p>
+ <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+ </li>
+ <li>
+ <h3>Dr. Sarah Johnson</h3>
+ <p>Location: County Medical Center</p>
+ <p>Contact: 987-654-3210</p>
+ <p>Email: <a href="mailto:sarah.johnson@example.com">sarah.johnson@example.com</a></p>
+ </li>
+ <li>
+ <h3>Dr. Michael Smith</h3>
+ <p>Location: Metropolitan Clinic</p>
+ <p>Contact: 555-123-4567</p>
+ <p>Email: <a href="mailto:michael.smith@example.com">michael.smith@example.com</a></p>
+ </li>
+ </ul>
+ </div>
+<div id="cardiologists">
+ <h2>Cardiologists</h2>
+ <ul>
+ <li>
+ <h3>Dr. Jennifer Lee</h3>
+ <p>Location: Heart Clinic</p>
+ <p>Contact: 111-222-3333</p>
+ <p>Email: <a href="mailto:jennifer.lee@example.com">jennifer.lee@example.com</a></p>
+ </li>
+ <li>
+ <h3>Dr. David Martinez</h3>
+ <p>Location: Cardiac Care Center</p>
+ <p>Contact: 222-333-4444</p>
+ <p>Email: <a href="mailto:david.martinez@example.com">david.martinez@example.com</a></p>
+ </li>
+ <li>
+ <h3>Dr. Linda Wilson</h3>
+ <p>Location: Heart Health Hospital</p>
+ <p>Contact: 333-444-5555</p>
+ <p>Email: <a href="mailto:linda.wilson@example.com">linda.wilson@example.com</a></p>
+ </li>
+ </ul>
+ </div>
+ <div id="neurologists">
+ <h2>Neurologists</h2>
+ <ul>
+ <li>
+ <h3>Dr. Emily Adams</h3>
+ <p>Location: Brain Institute</p>
+ <p>Contact: 111-222-3333</p>
+ <p>Email: <a href="mailto:emily.adams@example.com">emily.adams@example.com</a></p>
+ </li>
+ <li>
+ <h3>Dr. Andrew Wilson</h3>
+ <p>Location: Neurology Clinic</p>
+ <p>Contact: 222-333-4444</p>
+ <p>Email: <a href="mailto:andrew.wilson@example.com">andrew.wilson@example.com</a></p>
+ </li>
+ <li>
+ <h3>Dr. Sophia Miller</h3>
+ <p>Location: Nervous System Center</p>
+ <p>Contact: 333-444-5555</p>
+ <p>Email: <a href="mailto:sophia.miller@example.com">sophia.miller@example.com</a></p>
+ </li>
+ </ul>
+ </div>
+ <div id="orthopedic-surgeons">
+ <h2>Orthopedic Surgeons</h2>
+ <ul>
+ <li>
+ <h3>Dr. Daniel Johnson</h3>
+ <p>Location: Orthopedic Center</p>
+ <p>Contact: 111-222-3333</p>
+ <p>Email: <a href="mailto:daniel.johnson@example.com">daniel.johnson@example.com</a></p>
+ </li>
+ <li>
+ <h3>Dr. Emma Garcia</h3>
+ <p>Location: Joint Care Hospital</p>
+ <p>Contact: 222-333-4444</p>
+ <p>Email: <a href="mailto:emma.garcia@example.com">emma.garcia@example.com</a></p>
+ </li>
+ <li>
+ <h3>Dr. James Brown</h3>
+ <p>Location: Spine Clinic</p>
+ <p>Contact: 333-444-5555</p>
+ <p>Email: <a href="mailto:james.brown@example.com">james.brown@example.com</a></p>
+ </li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- Booking Form -->
+ <div id="booking-form">
+ <h2>Book Appointment</h2>
+ <form id="appointment-form">
+ <label for="doctor">Select Doctor:</label>
+ <select id="doctor" name="doctor">
+ <!-- Options will be dynamically populated here -->
+ <option value="">Select Doctor</option>
+ </select>
+ <br>
+ <label for="date">Date:</label>
+ <input type="date" id="date" name="date" required>
+ <br>
+ <label for="time">Time:</label>
+ <input type="time" id="time" name="time" required>
+ <br>
+ <label for="name">Patient Name:</label>
+ <input type="text" id="name" name="name" required>
+ <br>
+ <label for="email">Email:</label>
+ <input type="email" id="email" name="email" required>
+ <br>
+ <label for="phone">Phone:</label>
+ <input type="tel" id="phone" name="phone" required>
+ <br>
+ <button type="submit">Book Appointment</button>
+ </form>
+ </div>
+
+ <script>
+ const doctors = [
+ { name: "Dr. John Doe", category: "Physicians" },
+ { name: "Dr. Sarah Johnson", category: "Physicians" },
+ { name: "Dr. Michael Smith", category: "Physicians" },
+ { name: "Dr. Emily Brown", category: "Physicians" },
+ { name: "Dr. William Garcia", category: "Physicians" },
+ { name: "Dr. Jennifer Lee", category: "Cardiologists" },
+ { name: "Dr. David Martinez", category: "Cardiologists" },
+ { name: "Dr. Linda Wilson", category: "Cardiologists" },
+ { name: "Dr. Emily Adams", category: "Neurologists" },
+ { name: "Dr. Andrew Wilson", category: "Neurologists" },
+ { name: "Dr. Sophia Miller", category: "Neurologists" },
+ { name: "Dr. Daniel Johnson", category: "Orthopedic Surgeons" },
+ { name: "Dr. Emma Garcia", category: "Orthopedic Surgeons" },
+ { name: "Dr. James Brown", category: "Orthopedic Surgeons" },
+ ];
+
+ function initBookingForm() {
+ const doctorSelect = document.getElementById("doctor");
+ doctorSelect.innerHTML = ""; // Clear previous options
+ doctors.forEach(doctor => {
+ const option = document.createElement("option");
+ option.value = doctor.name;
+ option.textContent = doctor.name;
+ doctorSelect.appendChild(option);
+ });
+ }
+
+ function filterDoctorsByCategory(category) {
+ return doctors.filter(doctor => doctor.category === category);
+ }
+
+ function populateDoctorOptions(doctorList) {
+ const doctorSelect = document.getElementById("doctor");
+ doctorSelect.innerHTML = ""; // Clear previous options
+ doctorList.forEach(doctor => {
+ const option = document.createElement("option");
+ option.value = doctor.name;
+ option.textContent = doctor.name;
+ doctorSelect.appendChild(option);
+ });
+ }
+
+ document.addEventListener("DOMContentLoaded", initBookingForm);
+
+ document.querySelectorAll("#categories a").forEach(link => {
+ link.addEventListener("click", function(event) {
+ event.preventDefault();
+ const category = this.getAttribute("href").substring(1);
+ const filteredDoctors = filterDoctorsByCategory(category);
+ populateDoctorOptions(filteredDoctors);
+ });
+ });
+
+ document.getElementById("appointment-form").addEventListener("submit", function(event) {
+ event.preventDefault();
+ const selectedDoctor = document.getElementById("doctor").value;
+ const selectedDate = document.getElementById("date").value;
+ const selectedTime = document.getElementById("time").value;
+ const patientName = document.getElementById("name").value;
+ const patientEmail = document.getElementById("email").value;
+ const patientPhone = document.getElementById("phone").value;
+
+ // Here, you can perform additional validation if needed
+
+ // Display a confirmation message
+ alert(`Appointment booked with ${selectedDoctor} on ${selectedDate} at ${selectedTime}.`);
+
+ // Optionally, you can clear the form fields after submission
+ this.reset();
+ });
+ </script>
+</body>
+</html>

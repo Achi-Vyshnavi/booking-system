@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Social_Sync</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="new2.html">Home</a> <!-- Updated the href to personal.html -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="tel:+442032879723" class="nav-link">+91 1234567890</a>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Medical Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Medical</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-5 col-lg-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-user-md"></i> Doctor Appointment</h5>
+                        <button class="btn btn-click-me" id="da">Click Here</button>
+                    </div>
+                    <script>
+                                     var btn = document.getElementById("da");
+
+// Add click event listener to the button
+btn.addEventListener("click", function() {
+    // Redirect to home.html
+    window.location.href = "doc.html";
+});
+                    </script>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-tint"></i> Blood Group</h5>
+                        <button class="btn btn-click-me" id="bg">Click Here</button>
+                        <script>
+                             var btn = document.getElementById("bg");
+
+// Add click event listener to the button
+btn.addEventListener("click", function() {
+    // Redirect to home.html
+    window.location.href = "home.html";
+});
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-heartbeat"></i> Health</h5>
+                        <button class="btn btn-click-me" id="he">Click Here</button>
+                    </div>
+                </div>
+                <script>
+                     var btn = document.getElementById("he");
+
+// Add click event listener to the button
+btn.addEventListener("click", function() {
+    // Redirect to home.html
+    window.location.href = "index.html";
+});
+                </script>
+            </div>
+            <div class="col-md-5 col-lg-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-file-medical-alt"></i> Reports</h5>
+                        <button class="btn btn-click-me">Click Here</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

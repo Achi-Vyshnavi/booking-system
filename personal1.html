@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Social_Sync</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="new2.html">Home</a> <!-- Updated the href to personal.html -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="tel:+442032879723" class="nav-link">+91 1234567890</a>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Personal Section -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div>
+            <h2 class="text-center">Personal</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-plane"></i> Flight</h5>
+                            <button class="btn btn-click-me" id="fl">Click me</button>
+                        </div>
+                        <script>
+                            var btn = document.getElementById("fl");
+   
+   // Add click event listener to the button
+   btn.addEventListener("click", function() {
+       // Open the link in a new tab
+       window.open("https://www.skyscanner.co.in/", "_blank");
+   });
+                       </script>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-film"></i> Movies</h5>
+                            <button class="btn btn-click-me" id="mo">Click me</button>
+                        </div>
+                        <script>
+                            var btn = document.getElementById("mo");
+   
+   // Add click event listener to the button
+   btn.addEventListener("click", function() {
+       // Open the link in a new tab
+       window.open("https://ticketnew.com/movies/bhimavaram", "_blank");
+   });
+                       </script>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-bus"></i> Bus</h5>
+                            <button class="btn btn-click-me" id="bus">Click me</button>
+                        </div>
+                        <script>
+                            var btn = document.getElementById("bus");
+       
+       // Add click event listener to the button
+       btn.addEventListener("click", function() {
+           // Redirect to home.html
+           window.location.href = "bus_booking.html","booknow.html";
+       });
+                       </script>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-train"></i> Train</h5>
+                            <button class="btn btn-click-me" id ="tc">Click me</button>
+                        </div>
+                        <script>
+                            var btn = document.getElementById("tc");
+   
+   // Add click event listener to the button
+   btn.addEventListener("click", function() {
+       // Open the link in a new tab
+       window.open("https://www.ixigo.com/trains?utm_source=Google&utm_medium=paid_search_google_trains&utm_campaign=train_search_desktop&gad_source=1&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf1Gpt0CSHrzgD2JbQi3O6rA-XTLyfyvoOCS6-ApQiHwnhI4axgXfWMaAsKnEALw_wcB", "_blank");
+   });
+                       </script>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-hotel"></i> Stay</h5>
+                            <button class="btn btn-click-me" id="st">Click me</button>
+                        </div>
+                        <script>
+                            var btn = document.getElementById("st");
+   
+   // Add click event listener to the button
+   btn.addEventListener("click", function() {
+       // Open the link in a new tab
+       window.open("https://www.ixigo.com/trains?utm_source=Google&utm_medium=paid_search_google_trains&utm_campaign=train_search_desktop&gad_source=1&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf1Gpt0CSHrzgD2JbQi3O6rA-XTLyfyvoOCS6-ApQiHwnhI4axgXfWMaAsKnEALw_wcB", "_blank");
+   });
+                       </script>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-map-marked-alt"></i> Personalized trip</h5>
+                            <button class="btn btn-click-me">Click me</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-hiking"></i> Pre-adventures bookings</h5>
+                            <button class="btn btn-click-me">Click me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

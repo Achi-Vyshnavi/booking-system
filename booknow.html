@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - Bus Booking</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book Your Bus Ticket</h1>
+        <form id="booking-form">
+            <!-- Your form fields here -->
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("booking-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Your form submission logic here (e.g., send data to backend)
+
+            // Display success message
+            alert("Ticket booked successfully!");
+
+            // Redirect to the "Personal" page after a short delay (e.g., 2 seconds)
+            setTimeout(function() {
+                window.location.href = "bus_booking.html"; // Redirect to the "Personal" page
+            }, 2000); // 2000 milliseconds = 2 seconds
+        });
+    </script>
+</body>
+</html>
